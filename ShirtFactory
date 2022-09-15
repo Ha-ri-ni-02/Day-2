@@ -1,0 +1,37 @@
+package Day2;
+
+import java.util.Scanner;
+
+public class ShirtFactory {
+
+    int count;
+    String size;
+    String color;
+
+    public static void cottondress(int count, String size, String color) {
+        System.out.println("Total no.of.shirt order is 100");
+        System.out.println("The customer already ordered" + " " + count + " " + size + " size" + " " + color + " " + "shirt");
+    }
+
+
+    ShirtFactory(int counts) {
+        Scanner scan = new Scanner(System.in);
+        for (int i = 0; i < counts; ) {
+            int a = scan.nextInt();
+            String b = scan.next();
+            String c = scan.next();
+
+            int customer = i + a;
+            i = customer;
+
+            this.count = a;
+            this.size = b;
+            this.color = c;
+            if (i <= 50) {
+                System.out.println("I need" + " " + a + " " + c + " " + "color shirt and it should be in" + " " + b + " " + "size");
+            }
+        }
+    }
+}
+
+
