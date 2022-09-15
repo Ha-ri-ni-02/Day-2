@@ -1,0 +1,19 @@
+
+package Day2;
+
+public class Orders extends ShirtFactory {
+
+    Orders(int counts) {
+        super(counts);
+    }
+
+    public static void main(String[] args) {
+
+ShirtFactory.cottondress(50, "medium", "Black");
+
+ShirtFactory tshirt = new ShirtFactory(50);
+
+
+
+    }
+}
